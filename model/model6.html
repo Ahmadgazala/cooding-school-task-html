@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Blog (div version)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      .header,
+      .nav,
+      .content,
+      .article,
+      .aside,
+      .footer {
+        padding: 20px;
+        margin: 10px;
+      }
+      .header,
+      .footer {
+        background-color: #f4f4f4;
+      }
+      .nav a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #333;
+      }
+      .content {
+        display: flex;
+      }
+      .article {
+        flex: 3;
+        margin-right: 20px;
+        background-color: #e2f0ff;
+        padding: 10px;
+      }
+      .aside {
+        flex: 1;
+        background-color: #fff0e2;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>My Personal Blog</h1>
+    </div>
+
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="content">
+      <div class="article">
+        <h2>My First Post</h2>
+        <p>
+          This is a paragraph about my first blog post. Using only divs makes it
+          harder to understand the structure.
+        </p>
+      </div>
+
+      <div class="article">
+        <h2>Another Post</h2>
+        <p>
+          This is another post. You need to rely on class names to know what
+          each div is for.
+        </p>
+      </div>
+
+      <div class="aside">
+        <h3>About Me</h3>
+        <p>
+          I am a web developer learning HTML and CSS. Without semantic tags,
+          it’s less clear which div is the sidebar.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 My Personal Blog</p>
+    </div>
+  </body>
+</html>
